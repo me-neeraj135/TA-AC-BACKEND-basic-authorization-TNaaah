@@ -1,0 +1,18 @@
+<!-- @format -->
+
+<% include partial/header%>
+<main class="padding-top">
+  <h2 class="secondary-heading padding-top text-center">update comment</h2>
+  <section class="container height flex justify-center">
+    <div class="update-comment-form-box flex-50">
+      <form action="/comments/<%= comment.id %>/edit" method="post">
+        <textarea name="comment" id="" cols="30" rows="10">
+          <%=comment.comment%>
+        </textarea>
+        <input type="submit" value="update" />
+      </form>
+    </div>
+  </section>
+</main>
+
+<% include partial/footer%>

@@ -1,0 +1,79 @@
+<!-- @format -->
+
+<% include partial/header %>
+<main class="height padding-top main">
+  <section class="container padding-top">
+    <h2 class="secondary-heading text-center">article details</h2>
+    <% if(info){%>
+    <h3 class="text-center info"><%= info %>!!</h3>
+    <%}%>
+
+    <article class="single-article">
+      <h3 class="tertiary-heading"><%= article.title %></h3>
+      <p class="padding-t-b color-silver"><%= article.description %></p>
+      <div class="author-name-box">
+        <cite> written by: <%= article.author.name %> </cite>
+      </div>
+      <div class="flex justify-between align-center">
+        <div>
+          <button class="btn btn-secondary">
+            <a href="/articles/<%= article.id %>/edit">edit</a>
+          </button>
+          <button class="btn btn-secondary">
+            <a href="/articles/<%= article.id %>/delete">delete</a>
+          </button>
+        </div>
+        <div class="flex align-center">
+          <a href="/articles/<%= article.id %>/like"
+            >👍:<%= article.like.length %></a
+          >
+          <a href="/articles/<%= article.id %>/dislike"
+            >👎:<%= article.dislike.length %></a
+          >
+        </div>
+      </div>
+
+      <!-- comment form-->
+
+      <div class="single-article-form-box">
+        <h3 class="tertiary-heading padding-t-b">comment</h3>
+        <form action="/articles/<%= article.id %>/comment" method="post">
+          <textarea
+            name="comment"
+            cols="30"
+            rows="3"
+            placeholder="comment..."
+          ></textarea>
+          <button type="submit">comment</button>
+        </form>
+
+        <!-- comments -->
+        <div>
+          <%if(article.comments.length>0){%> <%article.comments.forEach(elm=>{%>
+          <div>
+            <p class="comment-para">
+              <span class="cmt-name"><%=elm.name%></span>:
+              <span class="like"> <%=elm.comment%> </span>
+              <span>
+                <a class="like" href="/comments/<%= elm.id %>/like"
+                  >👍:<%=elm.like.length %></a
+                >
+                <a class="dislike" href="/comments/<%= elm.id %>/dislike"
+                  >👎:<%=elm.dislike.length %></a
+                >
+              </span>
+              <br />
+              <span>
+                <a class="edit" href="/comments/<%=elm.id%>/edit">edit</a>
+                <a class="delete" href="/comments/<%=elm.id%>/delete">delete</a>
+              </span>
+            </p>
+          </div>
+          <%})%> <%}%>
+        </div>
+      </div>
+    </article>
+  </section>
+</main>
+
+<% include partial/footer %>
