@@ -1,0 +1,50 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <header class="partial-header">
+      <nav class="container flex justify-between align-center">
+        <div class="flex-30">
+          <a href="/">blogger</a>
+        </div>
+
+        <ul class="flex">
+          <li>
+            <a href="/">home</a>
+          </li>
+          <li>
+            <a href="/articles">blogs</a>
+          </li>
+          <% if(user){%>
+          <li>
+            <a href="/articles/new">add blog</a>
+          </li>
+          <li>
+            <a href="/users/">hello : <span><%= user.name %></span></a>
+          </li>
+          <li>
+            <a href="/users/logout">logout</a>
+          </li>
+
+          <%}else{%>
+
+          <li>
+            <a href="/users/register">register</a>
+          </li>
+          <li>
+            <a href="/users/login">login</a>
+          </li>
+          <%}%>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

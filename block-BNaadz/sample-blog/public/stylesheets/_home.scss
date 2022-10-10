@@ -1,0 +1,220 @@
+/** @format */
+
+.height {
+  height: 100vh;
+}
+.padding-top {
+  padding-top: 3rem;
+}
+.padding-t-b {
+  padding: 1rem 0;
+}
+.primary-heading {
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  color: #081e2b;
+}
+.secondary-heading {
+  font-size: 1.1rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  color: #081e2b;
+}
+.tertiary-heading {
+  font-size: 1.1rem;
+  font-weight: 900;
+  // font-style: italic;
+  text-transform: capitalize;
+  color: rgb(7, 156, 243);
+}
+
+.para {
+  font-size: 0.8rem;
+  text-align: justify;
+  color: #081e2b;
+}
+.text-center {
+  text-align: center;
+}
+.submit {
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+.color-silver {
+  font-size: 0.9rem;
+  text-align: justify;
+  color: silver;
+}
+
+.info {
+  height: 1rem;
+  font-size: 0.8rem;
+  color: red;
+}
+
+// home-page -styling
+// register-form -styling
+.register-form {
+  box-shadow: 0 0 5px black;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  form {
+    padding: 1rem;
+    input {
+      width: 100%;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 0.2rem;
+      border: 1px solid silver;
+    }
+  }
+}
+
+// articles-page -styling
+
+.articles-section {
+  overflow: scroll;
+  gap: 1rem 0;
+  padding-bottom: 1rem;
+  article {
+    height: 15rem;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 0 5px black;
+  }
+  .comment-box {
+    margin-top: 0.5rem;
+    form {
+      textarea {
+        resize: none;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}
+.articles-section::-webkit-scrollbar {
+  display: none;
+}
+
+// add article -page
+
+.add-article-box {
+  border-radius: 5px;
+  box-shadow: 0 0 4px black;
+  padding: 0 1rem;
+  form {
+    padding: 1rem;
+    input {
+      width: 100%;
+      font-size: 1rem;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid silver;
+    }
+    textarea {
+      width: 100%;
+      font-size: 1rem;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid silver;
+      resize: none;
+    }
+  }
+}
+
+// single article-page-style
+.main {
+  overflow: auto;
+  padding-bottom: 1rem;
+}
+.main::-webkit-scrollbar {
+  display: none;
+}
+.single-article {
+  box-shadow: 0 0 0.5rem black;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  .author-name-box {
+    margin-bottom: 1rem;
+    cite {
+      font-size: 0.8rem;
+      font-weight: 600;
+      font-style: italic;
+      text-decoration: underline;
+      text-transform: capitalize;
+      color: rgba(165, 42, 42, 0.753);
+    }
+  }
+}
+.single-article-form-box {
+  // border: 1px solid;
+
+  form {
+    width: 30%;
+    margin-bottom: 1rem;
+    textarea {
+      width: 100%;
+      border-radius: 5px;
+      padding: 1rem;
+      resize: none;
+    }
+  }
+}
+
+.comment-para {
+  border-bottom: 1px solid silver;
+  display: inline-block;
+  padding: 0.5rem;
+  .cmt-name {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+}
+.edit {
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: #509ff3;
+}
+.delete {
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: brown;
+}
+.like,
+.dislike {
+  font-size: 0.8rem;
+  color: black;
+}
+
+// update comment -style
+.update-comment-form-box {
+  height: 20rem;
+  border-radius: 5px;
+  box-shadow: 0 0 0.5rem black;
+  margin-top: 1rem;
+  padding: 2rem;
+  form {
+    input {
+      display: block;
+      width: 30%;
+      margin: auto;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    textarea {
+      width: 100%;
+      font-size: 1.2rem;
+      resize: none;
+      border-radius: 5px;
+      border: 1px solid silver;
+    }
+  }
+}

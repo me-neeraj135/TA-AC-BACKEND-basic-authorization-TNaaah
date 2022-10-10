@@ -1,0 +1,21 @@
+<!-- @format -->
+
+<% include partial/header %>
+<main class="">
+  <section class="container flex justify-center height align-center">
+    <div class="add-article-box flex-50">
+      <h2 class="secondary-heading text-center padding-t-b">add article</h2>
+      <form action="/articles" method="post">
+        <input type="text" name="title" placeholder="title" />
+        <textarea
+          name="description"
+          id=""
+          rows="10"
+          placeholder="description..."
+        ></textarea>
+        <input class="submit" type="submit" value="add" />
+      </form>
+    </div>
+  </section>
+</main>
+<% include partial/footer %>
