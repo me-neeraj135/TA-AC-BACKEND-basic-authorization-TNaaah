@@ -1,0 +1,120 @@
+/** @format */
+* {
+  box-sizing: border-box;
+}
+.height {
+  height: 100vh;
+}
+.text-center {
+  text-align: center;
+}
+.primary-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: black;
+}
+.secondary-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: black;
+}
+.tertiary-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: black;
+}
+
+.padding-tb {
+  padding: 1rem 0;
+}
+.para {
+  font-size: 0.8rem;
+  text-align: justify;
+  margin: 1rem 0;
+}
+.info {
+  text-transform: lowercase;
+  color: red;
+}
+.like {
+  font-size: 0.8rem;
+}
+// register-form-styling
+
+.register-section {
+  height: 100%;
+  .register-form-box {
+    form {
+      box-shadow: 0 0 5px black;
+      border-radius: 5px;
+      padding: 2rem;
+      input {
+        width: 100%;
+        font-size: 0.5rem 1rem;
+        border-radius: 5px;
+        border: 1px solid silver;
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+// add product -form
+
+.add-product-box {
+  margin-top: 5rem;
+
+  form {
+    border-radius: 5px;
+    border: 1px solid silver;
+    padding: 2rem;
+    input {
+      width: 100%;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid silver;
+    }
+    select {
+      width: 100%;
+      font-size: 1rem;
+
+      margin-bottom: 0.5rem;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid silver;
+    }
+  }
+}
+
+// comment- edit-box
+
+.comment-edit-box {
+  // border: 1px solid;
+  box-shadow: 0 0 5px black;
+  border-radius: 5px;
+  form {
+    padding: 1rem;
+    textarea {
+      width: 100%;
+      resize: none;
+      border-radius: 5px;
+
+      border: 1px solid silver;
+    }
+    input {
+      width: 100%;
+      font-size: 1.2rem;
+      font-weight: 800;
+      padding: 0.5rem;
+      border-radius: 5px;
+
+      border: 1px solid silver;
+    }
+  }
+}
