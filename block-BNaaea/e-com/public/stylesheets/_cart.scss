@@ -1,0 +1,35 @@
+/** @format */
+
+table {
+  width: 100%;
+  border-spacing: 15px;
+}
+th {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 900;
+  background-color: antiquewhite;
+}
+th,
+td {
+  height: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+.p-name,
+.p-quant {
+  font-size: 1.2rem;
+}
+
+.total-amt-box {
+  width: 20%;
+  margin: 1rem;
+  padding: 1rem;
+  div {
+    margin: 1rem 0;
+  }
+}
