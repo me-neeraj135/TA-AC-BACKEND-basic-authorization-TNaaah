@@ -1,0 +1,72 @@
+/** @format */
+
+.prd-section {
+  padding: 1rem;
+  border-radius: 5px;
+  //   box-shadow: 0 0 5px black;
+}
+.prd-container {
+  //   border: 1px solid;
+  height: 25rem;
+  figure {
+    width: 25%;
+    border: 1px solid silver;
+  }
+  div {
+    // border: 1px solid red;
+    padding: 1rem;
+    p {
+      //   border: 1px solid green;
+      margin: 1rem 0;
+    }
+  }
+  span {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin: 0.1rem 0;
+  }
+}
+
+// comment
+.comment-box {
+  margin: 0.5rem 0;
+
+  width: 30%;
+  form {
+    margin: 0.5rem 0;
+
+    textarea {
+      width: 100%;
+      padding: 1rem;
+      border-radius: 5px;
+      resize: none;
+    }
+  }
+  p {
+    margin: 0.5rem 0;
+    border-bottom: 1px solid silver;
+    .commenter {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      word-break: break-all;
+    }
+    .edit-c {
+      font-size: 0.8rem;
+      font-weight: 900;
+
+      text-transform: capitalize;
+      color: green;
+    }
+
+    .delete-c {
+      font-size: 0.8rem;
+      font-weight: 900;
+
+      text-transform: capitalize;
+      color: brown;
+    }
+  }
+}

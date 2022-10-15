@@ -1,0 +1,57 @@
+/** @format */
+
+// user home-page-style
+
+.user-dbh-section {
+  //   border: 1px solid;
+  height: 90%;
+  padding: 1rem 0;
+  aside {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid silver;
+    .aside-heading {
+      padding: 1rem 0;
+      border-radius: 5px;
+      background-color: indianred;
+    }
+    ul {
+      overflow: auto;
+      li {
+        word-break: break-all;
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 1px solid silver;
+      }
+    }
+  }
+}
+.user-dbh-box {
+  gap: 1rem;
+  overflow: auto;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid silver;
+  li {
+    border-radius: 5px;
+    height: 20rem;
+    border: 1px solid silver;
+    figure {
+      border-radius: 5px;
+      // border: 1px solid blue;
+
+      height: 75%;
+    }
+    .product-detail-box {
+      padding: 0.5rem;
+
+      span {
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: black;
+      }
+    }
+  }
+}
