@@ -84,8 +84,9 @@ router.get(`/free`, (req, res, next) => {
 
 // vip
 router.get(`/vip`, (req, res, next) => {
-  Collection.find({ plan: `vip` }, (err, collection) => {
+  Collection.find({ plan: { $in: ["free", "vip"] } }, (err, collection) => {
     if (err) return next(err);
+    // console.log(collection, `pp`);
     res.render(`dashboard`, { collection });
   });
 });
@@ -182,7 +183,6 @@ router.get(`/:id/like`, (req, res, next) => {
         }
       );
     }
-    // console.log(err, item, `lll`);
   });
 });
 module.exports = router;
